@@ -1,0 +1,23 @@
+h3{
+    color: burlywood;
+}
+.wrapper{
+    background-color: red;
+    color: white;
+}
+#bio{
+    background-color: green;
+}
+
+/* ul li:nth-child(4){
+    color: blueviolet;
+}
+ul li:nth-last-child(2){
+    color: blueviolet;
+}
+ul li:nth-of-type(5){
+    color: blueviolet;
+} */
+ul li:nth-child(3n + 2){
+    color: blueviolet;
+}
