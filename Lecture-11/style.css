@@ -1,0 +1,35 @@
+.box{
+    border: 2px solid black;
+    background-color: brown;
+    color: white;
+}
+.wrapper{
+    /* position: sticky;
+    top: 0; */
+    position: fixed;
+    /* position: relative; */
+    border: 1px solid red;
+    /* height: 200px; */
+    background-color: aquamarine;
+}
+#box3{
+    /* position: relative; 
+    top: 0px;
+    right: 0px; */
+    /* left: 30px; */
+    /* bottom: 30px; */
+
+    /* position: absolute;
+    top: 0px;
+    left: 0px; */
+    /* left: 50px; */
+    /* bottom: 50px; */
+
+    /* position: fixed;
+    top: 0px;
+    left: 0px; */
+    /* z-index: -1; */
+
+    /* position: sticky;
+    top: 0px; */
+}
