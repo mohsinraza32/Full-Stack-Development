@@ -1,0 +1,32 @@
+#para {
+  background-color: aquamarine;
+  /* color: white; */
+  /* color: #00fb00; */
+  /* color: rgb(240,10, 50); */
+  /* color: rgba(red, green, blue, alpha); */
+  /* color: hsl(300, 40%, 20%); */
+  color: hsla(360, 100%, 100%, 1);
+  width: 1000px;
+  font-size: 20px;
+  font-family: sans-serif;
+  height: 800px;
+  background-image: url(https://cdn.pixabay.com/photo/2023/04/14/21/42/wallpaper-7926142_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body {
+  /* background: linear-gradient(to left,red,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+  /* background: radial-gradient(circle,red,blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+
+  background: conic-gradient(red, yellow, green, red);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
