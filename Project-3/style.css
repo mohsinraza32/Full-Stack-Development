@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url(./images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginpage{
+    background-color: rgba(128, 128, 128, 0.692);
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+     display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.inputfield{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+input[type="email"],input[type="password"]{
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px; 
+    font-family: "Poppins", sans-serif;
+}
+h1{
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 15px;
+}
+p{
+    font-size: 17px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+label{
+    font-size: 17px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+}
+input[type="submit"]{
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(227, 222, 222, 0.619);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    font-family: "Poppins", sans-serif;
+}
+input[type="submit"]:hover{
+    background-color: rgba(165, 42, 42, 0.224);
+    color: white;
+}
