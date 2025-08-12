@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: pink;
+  position: absolute;
+  /* animation-name: mohsin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 4s;
+    animation-iteration-count: 3;
+    animation-direction: alternate; */
+
+  /* animation-fill-mode: backwards; */
+  /* animation-fill-mode: forwards; */
+  /* animation-fill-mode: both; */
+  animation: mohsin 3s linear 1s infinite alternate both;
+}
+@keyframes mohsin {
+  /* from{
+        background-color: brown;
+        width: 400px;
+        height: 200px;
+     }
+     to{
+        color: white;
+        text-align: center;
+        font-family: sans-serif;
+        padding: 50px;
+        margin: 200px;
+        border: 10px solid red;
+        transform:translatex(550px);
+        background-color: cadetblue;
+        width: 700px;
+        height: 400px;
+     } */
+  /* 0% {
+    background-color: brown;
+    width: 400px;
+    height: 200px;
+  }
+  25%{
+    background-color: blue;
+  }
+  50%{
+    background-color: black;
+  }
+  100% {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px;
+    margin: 200px;
+    border: 10px solid red;
+    transform: translatex(550px);
+    background-color: cadetblue;
+    width: 700px;
+    height: 400px;
+  } */
+  0% {
+    background-color: violet;
+   top: 0;
+   left: 0; 
+  }
+  15%{
+    background-color: indigo;
+  }
+  30%{
+    background-color: blue;
+  }
+  45%{
+    background-color: green;
+  }
+  60%{
+    background-color: yellow;
+  }
+  75%{
+    background-color: orange;
+  }
+  100% {
+    background-color: red;
+   top: 0;
+   left: 100%;
+  }
+}
