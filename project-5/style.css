@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  height: auto;
 }
 *::-webkit-scrollbar-track
 {
@@ -14,7 +13,7 @@
 
 *::-webkit-scrollbar
 {
-	width: 12px;
+	width: 8px;
 	background-color:#c4c0c0;
 }
 
