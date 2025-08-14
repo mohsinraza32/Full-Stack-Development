@@ -85,7 +85,6 @@
   border: none;
   border: 1.5px solid black;
   cursor: pointer;
-
 }
 .btn img {
   margin-left: 5px;
@@ -119,6 +118,7 @@
 }
 .right {
   width: 70%;
+  height: 80%;
   position: relative;
 }
 .right img:nth-child(1) {
@@ -127,53 +127,114 @@
 }
 
 @keyframes gm {
-    0%{
-       transform: translatey(50px);
-    }
-    100%{
-      transform: translatey(0px);
-    }
+  0% {
+    transform: translatey(50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .right img:nth-child(2) {
   position: absolute;
-  top: 3%;
+  top: 3%; 
   right: 47.5%;
   width: 400px;
-  animation: heart 1s ease-in-out;
+  animation: heart 1s ease;
+  overflow-y: hidden;
 }
 @keyframes heart {
-    0%{
-       transform: translatey(50px);
-    }
-    75%{
-        opacity: 0;
-    }
-    100%{
-      transform: translatey(0px);
-    }
-}
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
 .right img:nth-child(3) {
   width: 400px;
-  animation: gm 0.7s ease-in-out;
+  animation: chai 1.5s ease-in-out;
+}
+@keyframes chai {
+  0% {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  60%{
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translatey(0px);
+  }
 }
 .right img:nth-child(4) {
   width: 400px;
-  animation: gm 0.8s ease-in-out;
+  animation: voice 2s ease-in-out;
+}
+@keyframes voice {
+  0% {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .right img:nth-child(5) {
   width: 400px;
-  animation: gm 0.9s ease-in-out;
+  animation: emotionalpic 2.5s ease-in-out;
+}
+@keyframes emotionalpic {
+  0% {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .right img:nth-child(6) {
-    position: absolute;
-    top: 84%;
+  position: absolute;
+  top: 73%;
   right: 47.5%;
   width: 400px;
-  animation: gm 1s ease-in-out;
+  animation: emotionalemoji 3s ease-in-out;
+}
+@keyframes emotionalemoji {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .right img:nth-child(7) {
   width: 400px;
-  animation: gm 1.1s ease-in-out;
+  animation: tricchap 3s ease-in-out;
+}
+@keyframes tricchap {
+  0% {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  60%{
+    opacity: 0;
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
 .left {
   width: 100%;
