@@ -139,7 +139,7 @@
   top: 3%; 
   right: 47.5%;
   width: 400px;
-  animation: heart 1s ease;
+  animation: heart 1s ease-in-out;
   overflow-y: hidden;
 }
 @keyframes heart {
@@ -270,4 +270,7 @@
   border: 1.5px solid black;
   width: 155px;
   cursor: pointer;
+}
+.btn1 img {
+  margin-left: 5px;
 }
