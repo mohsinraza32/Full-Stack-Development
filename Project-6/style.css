@@ -6,7 +6,7 @@
 }
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgba(255, 228, 196, 0.333);
 }
 /* navbar */
@@ -92,7 +92,7 @@
 /* hero section */
 
 .hero-section {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 30px;
@@ -102,7 +102,7 @@
 }
 .featuredetails {
   background-image: url(./images/MaaBeti.png);
-  height: 80%;
+  height: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -136,7 +136,7 @@
 }
 .right img:nth-child(2) {
   position: absolute;
-  top: 3%; 
+  top: 3%;
   right: 47.5%;
   width: 400px;
   animation: heart 1s ease-in-out;
@@ -152,7 +152,7 @@
   100% {
     opacity: 1;
   }
-} 
+}
 .right img:nth-child(3) {
   width: 400px;
   animation: chai 1.5s ease-in-out;
@@ -162,10 +162,10 @@
     opacity: 0;
     transform: translatey(50px);
   }
-  60%{
+  60% {
     opacity: 0;
   }
-  
+
   100% {
     transform: translatey(0px);
   }
@@ -179,7 +179,7 @@
     opacity: 0;
     transform: translatey(50px);
   }
-  60%{
+  60% {
     opacity: 0;
   }
   100% {
@@ -195,7 +195,7 @@
     opacity: 0;
     transform: translatey(50px);
   }
-  60%{
+  60% {
     opacity: 0;
   }
   100% {
@@ -229,7 +229,7 @@
     opacity: 0;
     transform: translatey(50px);
   }
-  60%{
+  60% {
     opacity: 0;
   }
   100% {
@@ -274,3 +274,29 @@
 .btn1 img {
   margin-left: 5px;
 }
+/* message section */
+
+.firstsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: 95%;
+  overflow: hidden;
+}
+
+.firstsection p {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  max-width: 40%;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+  font-weight: 500;
+  overflow-y: hidden;
+  letter-spacing: -1px;
+}
+.firstsection > img {
+  width: 80%;
+}
+
