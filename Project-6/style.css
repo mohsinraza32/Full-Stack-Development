@@ -274,7 +274,7 @@
 .btn1 img {
   margin-left: 5px;
 }
-/* message section */
+/* first section */
 
 .firstsection {
   display: flex;
@@ -296,7 +296,74 @@
   overflow-y: hidden;
   letter-spacing: -1px;
 }
-.firstsection > img {
+.firstsection img {
   width: 80%;
 }
+/* second section */
 
+.firstbdy {
+  display: flex;
+  margin-top: 100px;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+.secondsection {
+  width: 100vw;
+ margin-top: 100px;
+  overflow: hidden;
+}
+.firstbdy .right img {
+  width: 370px;
+}
+.firstbdy .right{
+  overflow-y: hidden;
+}
+.firstbdy .left h2 {
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 55px;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+}
+.firstbdy .left p{
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-top: 18px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.753);
+  overflow-y: hidden;
+}
+.learn-more > img{
+  rotate: 180deg;
+  margin-left: 5px;
+  margin-top: 25px;
+}
+.learn-more > span{
+  font-size: 20px ;
+  font-family: "Poppins", sans-serif;
+}
+.learn-more{
+  position: relative;
+}
+.learn-more > span::before{
+  content: "";
+  background-color: rgb(40, 246, 40);
+  width: 113px;
+  height: 2px;
+  position: absolute;
+  bottom: 0%;
+}
+/*****/
+
+.swap-section{
+  flex-direction: row-reverse;
+  gap: 130px;
+}
+.bgchange{
+  background-color: black;
+  color: white;
+  width: 100%;
+}
