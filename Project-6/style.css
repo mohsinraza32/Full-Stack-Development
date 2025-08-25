@@ -74,19 +74,54 @@
   transition: all 0.5s ease-in-out;
 }
 .btn {
-  padding: 15px 30px;
-  margin-top: 10px;
+  padding: 15px 20px;
   font-size: 16px;
+  margin-top: 15px;
   border-radius: 30px;
-  font-weight: 400;
+  font-weight: 500;
   background-color: #25d366;
   border: none;
   border: 1.5px solid black;
+  width: 155px;
   cursor: pointer;
+  position: relative;
+  overflow-y: hidden;
+  z-index: 1;
+  transition: 1s;
+
+}
+.btn:hover{
+  color: white;
+}
+.btn:hover img{
+   filter: brightness(0) invert(1);
+
+}
+.btn::before{
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 0.5s;
+  transform: translateY(50px);
+}
+.btn:hover::before{
+  transform: translateY(0px);
+  opacity: 1;
+}
+.btn1{
+  margin-top: 60px;
 }
 .btn img {
   margin-left: 5px;
+  
 }
+
 /* hero section */
 
 .hero-section {
@@ -255,19 +290,8 @@
   font-size: 17px;
   color: white;
 }
-.btn1 {
-  padding: 15px 20px;
-  margin-top: 60px;
-  font-size: 16px;
-  border-radius: 30px;
-  font-weight: 500;
-  background-color: #25d366;
-  border: none;
-  border: 1.5px solid black;
-  width: 155px;
-  cursor: pointer;
-}
-.btn1 img {
+
+.btn img {
   margin-left: 5px;
 }
 /* first section */
@@ -437,38 +461,46 @@
   font-size: 12px;
   font-weight: 400;
   color: #f0f4f9;
+  text-decoration: none;
 }
 .sub-footer-container .sitemap p a {
   font-size: 12px;
   font-weight: 500;
   color: #ffffff;
+  text-decoration: none;
 }
-.sub-footer-container .social-apps a img{
-  border: 1px solid white;
-  border-radius: 50%;
-  padding: 13px;
-  margin-left: 17px;
-  filter: brightness(0) invert(1);
-  display: inline-block;
-}
-.lang-dropdown{
-  border: 1px solid white;
-  width: 220px;
-  border-radius: 30px;
+.sub-footer-container .social-apps{
+  width: 350px;
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+.social-apps a{
+  display: flex;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 50%;
+}
+.lang-dropdown {
+  border: 1px solid white;
+  width: 220px;
+  height: 55px;
+  display: flex;
   justify-content: center;
-  gap: 100px;
- 
-  
+  gap: 90px;
+  padding-left: 9px;
+  align-items: center;
+  border-radius: 30px;
 }
-.lang-dropdown span{
+select {
+  border: none;
+  outline: none;
+  background: transparent;
   color: white;
-  font-size: 16px;
-  font-weight: 600;
+  -webkit-appearance: none;
 }
-.lang-dropdown img{
+
+.lang-dropdown img {
   filter: brightness(0) invert(1);
   rotate: 90deg;
-
 }
