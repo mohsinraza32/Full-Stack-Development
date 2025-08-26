@@ -20,6 +20,11 @@
   align-items: center;
   width: 95%;
   margin: auto;
+  position: fixed;
+  background-color: #fcf5ebce;
+  width: 100%;
+  padding: 0px 20px 0px 20px;
+  z-index: 2;
 }
 .navlist ul {
   display: flex;
@@ -133,7 +138,7 @@
   height: 90vh;
   display: flex;
   flex-direction: column;
-  padding-top: 55px;
+  padding-top: 120px;
   width: 96%;
   margin: auto;
   align-items: end;
@@ -399,9 +404,13 @@
   top: 28%;
   right: 55%;
 }
-
-.swap-items {
-  flex-direction: row-reverse;
+.swap-items{
+  background-color:rgba(197, 203, 201, 0.703);
+  height: 670px;
+}
+.right-img img{
+  height: 500px;
+  width: 500px;
 }
 .grpmsg {
   position: relative;
