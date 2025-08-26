@@ -1,77 +1,252 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    background-image: url(./images/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  background-image: url(./images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.loginpage{
-    background-color: rgba(128, 128, 128, 0.692);
-    width: 30%;
-    height: 60%;
-    border-radius: 20px;
-     display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.loginpage {
+  background-color: rgba(128, 128, 128, 0.532);
+  width: 30%;
+  height: 60%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
-.password{
-    display: flex;
-    justify-content: space-between;
-    width: 70%;
+.password {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
-.inputfield{
+.inputfield {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+input[type="email"],
+input[type="password"] {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 80px;
+  font-family: "Poppins", sans-serif;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 15px;
+}
+p {
+  font-size: 17px;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+label {
+  font-size: 17px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+input[type="submit"] {
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(227, 222, 222, 0.619);
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-family: "Poppins", sans-serif;
+}
+input[type="submit"]:hover {
+  background-color: rgba(165, 42, 42, 0.224);
+  color: white;
+}
+
+/* making responsive */
+
+/* very small mobile device */
+@media screen and (max-width: 320px) {
+    .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 90%;
+    height: 85%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .inputfield {
+    width: 95%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+  .password {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    width: 70%;
+    width: 100%;
+  }
 }
-input[type="email"],input[type="password"]{
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px; 
-    font-family: "Poppins", sans-serif;
-}
-h1{
+
+/* Mobile device */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 80%;
+    height: 90%;
+  }
+  h1 {
     font-size: 60px;
-    font-family: "Poppins", sans-serif;
-}
-input[type="checkbox"]{
-    width: 20px;
-    height: 15px;
-}
-p{
+  }
+  .inputfield {
+    width: 85%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 15px;
     font-size: 17px;
-    text-decoration: underline;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
-label{
-    font-size: 17px;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
+/* Tablets and ipads */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 70%;
+    height: 95%;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .inputfield {
+    width: 75%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 17px;
+    font-size: 18px;
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
-input[type="submit"]{
-    padding: 20px 40px;
-    border-radius: 10px;
-    border: none;
+
+/* small screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+          .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 60%;
+    height:87%;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  .inputfield {
+    width: 80%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 17px;
+    font-size: 18px;
+  }
+  .password {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+/* Large screen */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+          .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 50%;
+    height: 90%;
+  }
+  h1 {
+    font-size: 75px;
+  }
+  .inputfield {
+    width: 80%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 18px;
+    font-size: 19px;
+  }
+  .password {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+/* Extra Large screen */
+@media screen and (min-width: 1201px) and (max-width:1400px) {
+         .container {
+    background-position: center;
+  }
+  .loginpage {
+    background-color: rgba(128, 128, 128, 0.532);
+    width: 40%;
+    height: 95%;
+  }
+  h1 {
+    font-size: 80px;
+  }
+  .inputfield {
+    width: 85%;
+  }
+  input[type="email"],
+  input[type="password"] {
+    padding: 20px;
     font-size: 20px;
-    background-color: rgba(227, 222, 222, 0.619);
-    cursor: pointer;
-    transition: 0.3s ease-in;
-    font-family: "Poppins", sans-serif;
+  }
+  .password {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
 }
-input[type="submit"]:hover{
-    background-color: rgba(165, 42, 42, 0.224);
-    color: white;
-}
+
