@@ -80,7 +80,7 @@ input[type="submit"]:hover {
 /* making responsive */
 
 /* very small mobile device */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 319px) {
     .container {
     background-position: center;
   }
@@ -201,11 +201,11 @@ input[type="submit"]:hover {
   }
   .loginpage {
     background-color: rgba(128, 128, 128, 0.532);
-    width: 50%;
+    width: 60%;
     height: 90%;
   }
   h1 {
-    font-size: 75px;
+    font-size: 80px;
   }
   .inputfield {
     width: 80%;
