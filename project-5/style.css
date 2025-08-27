@@ -46,7 +46,7 @@
 .nav-left img:nth-child(1) {
   width: 23px;
 }
-.nav-right img:nth-child(3) {
+.nav-right img:nth-child(4) {
   width: 35px;
   border-radius: 50%;
 }
@@ -270,14 +270,15 @@ p:nth-child(4) {
   filter: invert(1); /* white banane ke liye */
 }
 .faqs-section {
-  height: 57%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap:20px;
-  background-color: black;
+    height: 55%;
+    width: 100%;
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
 }
 .faqs-section h3 {
   font-size: 30px;
@@ -305,4 +306,132 @@ p:nth-child(4) {
 .faqs-section  > p > a{
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+}
+@media  screen and (max-width:319px){
+  .nav-center {
+    display: none;
+}
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+.nav-right > img:nth-child(3) {
+    display: none;
+}
+.youtube-premium {
+    height: 88%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+}
+
+@media  screen and (min-width:320px) and (max-width:480px){
+   .nav-center {
+    display: none;
+}
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 10px;
+}
+.nav-right > img:nth-child(3) {
+    display: none;
+}
+.youtube-premium {
+    height: 88%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 10px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+}
+
+@media  screen and (min-width:481px) and (max-width:768px){
+   
+}
+
+@media  screen and (min-width:769px) and (max-width:1024px){
+   
+}
+
+@media  screen and (min-width:1025px) and (max-width:1200px){
+   
+}
+
+@media  screen and (min-width:1201px) and (max-width:1440px){
+   
 }
