@@ -291,11 +291,11 @@ p:nth-child(4) {
 .faqs-item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #cccccc63;
-  width: 50%;
+  border-bottom: 1px solid red;
+
 }
 .faqs-section p {
-  font-size: 15px;
+  font-size: 50px;
   color: rgb(224, 216, 216);
   padding-bottom: 25px;
   font-family: "Poppins", sans-serif;
@@ -516,18 +516,20 @@ p:nth-child(4) {
 }
 .ytpremium-features {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 64%;
 }
 .ytpremium-features .features {
-    width: 97%;
-    height: 100%;
+    width: 30%;
+    border: 3px solid red;
+    height: 83%;
+    overflow-y: hidden;
     padding-top: 16px;
-}
+}}
 .adfree-feature-1 {
     height: 45%;
 }
@@ -601,7 +603,6 @@ p:nth-child(4) {
 }
 .ytpremium-features {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -610,8 +611,9 @@ p:nth-child(4) {
     height: 64%;
 }
 .ytpremium-features .features {
-    width: 97%;
-    height: 65%;
+    width: 30%;
+    border: 3px solid red;
+    height: 45%;
     padding-top: 16px;
 }
 .adfree-feature-1 {
@@ -687,16 +689,17 @@ p:nth-child(4) {
 }
 .ytpremium-features {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 64%;
 }
 .ytpremium-features .features {
-    width: 97%;
-    height: 100%;
+    width: 30%;
+    border: 3px solid red;
+    height: 75%;
     padding-top: 16px;
 }
 .adfree-feature-1 {
@@ -772,16 +775,18 @@ p:nth-child(4) {
 }
 .ytpremium-features {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 64%;
 }
 .ytpremium-features .features {
-    width: 97%;
-    height: 100%;
+    width: 30%;
+    border: 3px solid red;
+    height: 75%;
+    padding-top: 16px;
 }
 .adfree-feature-1 {
     height: 45%;
@@ -855,16 +860,18 @@ p:nth-child(4) {
 }
 .ytpremium-features {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     background-color: black;
     width: 100%;
-    height: 100%;
+    height: 64%;
 }
 .ytpremium-features .features {
-    width: 97%;
-    height: 100%;
+    width: 30%;
+    border: 3px solid red;
+    height: 75%;
+    padding-top: 16px;
 }
 .adfree-feature-1 {
     height: 45%;
