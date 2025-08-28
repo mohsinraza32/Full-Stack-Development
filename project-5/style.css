@@ -138,14 +138,14 @@ p:nth-child(4) {
   color: #1e90ff;
 }
 .ytpremium-features {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  background-color: black;
-  height: 38%;
-  overflow-y: hidden;
-  /* align-items: center; */
-  padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    background-color: black;
+    width: 100%;
+    height: 54%;
+    overflow-y: hidden;
 }
 .ytpremium-features .features {
   width: 15%;
@@ -291,7 +291,7 @@ p:nth-child(4) {
 .faqs-item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #cccccc31;
+  border-bottom: 1px solid #cccccc63;
   width: 50%;
 }
 .faqs-section p {
@@ -332,6 +332,66 @@ p:nth-child(4) {
 .youtube-desc p:nth-child(3), p:nth-child(4) {
     text-align: center;
 }
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+    padding-top: 16px;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 10px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
 }
 
 @media  screen and (min-width:320px) and (max-width:480px){
@@ -348,6 +408,357 @@ p:nth-child(4) {
     gap: 10px;
 }
 .nav-right > img:nth-child(3) {
+    display: none;
+}
+.youtube-premium {
+    height: 94%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+    padding-top: 16px;
+    overflow-y: hidden;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-section {
+    height: 65%;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+
+.faqs-section p {
+    font-size: 9px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+.faqs-section h3 {
+    font-size: 23px;
+}
+}
+
+@media  screen and (min-width:481px) and (max-width:768px){
+   .nav-center {
+    display: none;
+}
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 16px;
+}
+.nav-right > img:nth-child(3) {
+    display: none;
+}
+.youtube-premium {
+    height: 88%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+    padding-top: 16px;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 11px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+}
+
+@media  screen and (min-width:769px) and (max-width:1024px){
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-right > img:nth-child(1) {
+    display: none;
+}
+.youtube-premium {
+    height: 88%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 64%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 65%;
+    padding-top: 16px;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 11px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+}
+
+@media  screen and (min-width:1025px) and (max-width:1200px){
+   .nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-right > img:nth-child(1) {
+    display: none;
+}
+.youtube-premium {
+    height: 88%;
+}
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+    padding-top: 16px;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 11px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
+}
+
+@media  screen and (min-width:1201px) and (max-width:1440px){
+   .nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 16px;
+}
+
+.nav-right > img:nth-child(1) {
     display: none;
 }
 .youtube-premium {
@@ -413,25 +824,92 @@ p:nth-child(4) {
     width: 82%;
 }
 .faqs-section p {
-    font-size: 10px;
+    font-size: 11px;
     color: rgb(224, 216, 216);
     padding-bottom: 25px;
     font-family: "Poppins", sans-serif;
 }
 }
-
-@media  screen and (min-width:481px) and (max-width:768px){
-   
+@media  screen and (min-width:1441px) and (max-width:1740px){
+   .nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.nav-left {
+    display: flex;
+    gap: 16px;
 }
 
-@media  screen and (min-width:769px) and (max-width:1024px){
-   
+.nav-right > img:nth-child(1) {
+    display: none;
 }
-
-@media  screen and (min-width:1025px) and (max-width:1200px){
-   
+.youtube-premium {
+    height: 88%;
 }
-
-@media  screen and (min-width:1201px) and (max-width:1440px){
-   
+.yt-premium-logo img{
+  width: 90%;
+}
+.youtube-desc p:nth-child(3), p:nth-child(4) {
+    text-align: center;
+}
+.ytpremium-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.ytpremium-features .features {
+    width: 97%;
+    height: 100%;
+}
+.adfree-feature-1 {
+    height: 45%;
+}
+.adfree-feature-1 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-2 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-2 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.adfree-feature-3 {
+    height: 45%;
+}
+.adfree-feature-3 .features-detail {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.adfree-feature-4 {
+    height: 45%;
+    background-position: center;
+}
+.adfree-feature-4 .features-detail {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+.faqs-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc31;
+    width: 82%;
+}
+.faqs-section p {
+    font-size: 11px;
+    color: rgb(224, 216, 216);
+    padding-bottom: 25px;
+    font-family: "Poppins", sans-serif;
+}
 }
