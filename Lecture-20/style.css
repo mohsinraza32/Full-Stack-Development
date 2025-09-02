@@ -1,33 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
 }
-.wrapper{
-    width: 70%;
-    height: 50%;
-    background-color: red;
-    display: grid;
-    /* grid-gap:  20px 0px; */
-    /* grid-template-rows: 40px 40px 40px 40px 40px 40px; */
-    /* grid-template-columns: 500px 200px 200px 200px 200px; */
+.wrapper {
+  width: 70%;
+  height: 50%;
+  background-color: red;
+  display: grid;
+  /* grid-gap:  20px 0px; */
+  /* grid-template-rows: 40px 40px 40px 40px 40px 40px; */
+  /* grid-template-columns: 500px 200px 200px 200px 200px; */
 
-    grid-template-rows: repeat(3,1fr); 
-    grid-template-columns: repeat(3,1fr); 
-    /* grid-template-rows: repeat(6,1fr); */
-    /* grid-template-rows:1fr 3fr 2fr ; */
-    grid-template-areas: 
-       "Header Header Header"
-       "Side bar Content Image"
-       "Side bar Footer Footer"
-    ;
-}
-.box{ 
-    background-color: aquamarine;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(6,1fr); */
+  /* grid-template-rows:1fr 3fr 2fr ; */
+  grid-gap: 5px;
+  /* grid-template-areas: 
+       "header header"
+       "sidebar content1"
+       "sidebar content2"; */
+
+  /* grid-template-areas:
+    "header header header"
+    "sidebar content image"
+    "sidebar footer footer";
+} */
+
+grid-template-areas: 
+     "header header header"
+     "menu main right"
+     "menu footer footer"
+;
+.box {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 /* .box-1{
     grid-row-start: 1;
@@ -36,24 +51,54 @@ body{
     grid-column-end: 4;
 } */
 
- /* .box-5{
+/* .box-5{
     grid-area: 1 / 4 / 5 / 6;    
     grid-row: 1 / 4;
     grid-column: 5 / 6;
 }  */
 
-.box-1{
-    grid-area: Header;
+/* .box-1{
+    grid-area: header;
 }
 .box-2{
-    grid-area: Side bar;
+    grid-area: sidebar;
 }
 .box-3{
-    grid-area: Content;
+    grid-area: content1;
 }
 .box-4{
-    grid-area: Image;
+    grid-area: content2;
+} */
+
+/* .box-1 {
+  grid-area: header;
+}
+.box-2 {
+  grid-area: sidebar;
+}
+.box-3 {
+  grid-area: content;
+}
+.box-4 {
+  grid-area: image;
+}
+.box-5 {
+  grid-area: footer;
+} */
+
+.box-1{
+    grid-area: header;
+}
+.box-2{
+    grid-area: menu;
+}
+.box-3{
+    grid-area: main;
+}
+.box-4{
+    grid-area: right;
 }
 .box-5{
-    grid-area: Footer;
+    grid-area: footer;
+}
 }
