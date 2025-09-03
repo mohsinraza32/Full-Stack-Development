@@ -20,17 +20,19 @@
   justify-content: space-between;
   align-items: center;
   width: 95%;
+  height: 8%;
   margin: auto;
   position: fixed;
   background-color: #fcf5ebce;
   width: 100%;
   padding: 0px 20px 0px 20px;
   z-index: 2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.321);
 }
 .navlist ul {
   display: flex;
   gap: 40px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   align-items: center;
 }
 .navlist ul li {
@@ -82,7 +84,6 @@
 .btn {
   padding: 15px 20px;
   font-size: 16px;
-  margin-top: 15px;
   border-radius: 30px;
   font-weight: 500;
   background-color: #25d366;
@@ -134,13 +135,13 @@
 /* hero section */
 
 .hero-section {
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
-    width: 96%;
-    margin: auto;
-    align-items: end;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  width: 96%;
+  margin: auto;
+  align-items: end;
 }
 .featuredetails {
   background-image: url(./images/MaaBeti.png);
@@ -327,20 +328,20 @@
   width: 65%;
 }
 /* second section */
-.secondsection{
+.secondsection {
   width: 100%;
   height: 100%;
 }
-.firstbdy{
+.firstbdy {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
 }
-.secondsection .firstbdy .left{
+.secondsection .firstbdy .left {
   width: 30%;
 }
-.secondsection .firstbdy .right{
+.secondsection .firstbdy .right {
   width: 25%;
 }
 .firstbdy .left h2 {
@@ -383,7 +384,6 @@
 .firstbdy .right img {
   width: 300px;
   margin-left: 50px;
-
 }
 /*****/
 
@@ -391,10 +391,10 @@
   position: relative;
 }
 .beach img:nth-child(2) {
-    position: absolute;
-    width: 330px;
-    top: 150px;
-    right: 110px;
+  position: absolute;
+  width: 330px;
+  top: 150px;
+  right: 110px;
 }
 .right-img img {
   height: 500px;
@@ -534,10 +534,10 @@ select {
   filter: brightness(0) invert(1);
   rotate: 90deg;
 }
-.media2{
+.media2 {
   display: none;
 }
-.footer-sec2{
+.footer-sec2 {
   display: none;
 }
 
@@ -554,8 +554,9 @@ select {
     z-index: 2;
     background-color: #fdf5ebd5;
     height: 7%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.321);
   }
-  .media2{
+  .media2 {
     display: block;
   }
   .whatapplogo img {
@@ -598,7 +599,7 @@ select {
     height: 72vh;
     width: 96%;
     margin-top: 61px;
-}
+  }
   .firstsection p {
     font-size: 23px;
     line-height: 20px;
@@ -607,128 +608,315 @@ select {
   .firstsection .media1 {
     display: none;
   }
- .secondsection .firstbdy {
+  .secondsection .firstbdy {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     align-items: center;
     justify-content: center;
-}
-.secondsection .firstbdy .left {
+  }
+  .secondsection .firstbdy .left {
     width: 100%;
     padding-left: 20px;
-}
-.secondsection .firstbdy .right {
+  }
+  .secondsection .firstbdy .right {
     width: 100%;
     margin: 50px 0px 30px 0px;
     display: flex;
     justify-content: center;
-}
-.firstbdy .right img {
+  }
+  .firstbdy .right img {
     width: 200px;
     margin: 0;
-}
-.firstbdy .left h2 {
+  }
+  .firstbdy .left h2 {
     font-size: 31px;
     font-weight: 400;
     line-height: 28px;
     color: #1c1e21;
     overflow-y: hidden;
-}
-.firstbdy .left p {
+  }
+  .firstbdy .left p {
     font-size: 17px;
     font-weight: 400;
     margin-top: 18px;
     line-height: 19px;
     color: #1c1e21;
     overflow-y: hidden;
-}
-.learn-more > span {
+  }
+  .learn-more > span {
     font-size: 14px;
     line-height: 16px;
     font-weight: 400;
     color: #1c1e21;
-}
-.beach img:nth-child(2) {
+  }
+  .beach img:nth-child(2) {
     position: absolute;
     width: 300px;
     top: 80px;
     right: 10px;
-}
-.footer-sec1{
-  display: none;
-}
-.footer-sec2{
-  display: block;
-}
-.footer-sec2{
-  background-color: black;
-  width: 100%;
-  height: 100%;
-}
-.footer-top{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.footer-top .btn{
-  margin-bottom: 35px;
-}
-hr{
-  width: 100%;
-}
-.footer-top .social-apps{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-}
-.footer-sec-links{
-  display: grid;
-  grid-template-rows: repeat(2,1fr);
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 26px 0px;
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-.footer-sec-links ul li a {
-  font-size: 16px;
-  font-weight: 400;
-  color: #ffffff;
-  line-height: 30px;
-  text-decoration: none;
-}
-.footer-whatapp-logo > img {
-  width: 140px;
-  margin: 30px 0px 30px 0px;
-  padding-left: 20px;
-}
-.footer-bottom{
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0px 20px 0px;
-  
-}
-.footer-bottom .whatsapp-policy p a{
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-}
-.footer-bottom .whatsapp-policy > p{
-  color: white;
-  font-size: 12px;
-  padding-left: 20px;
-}
-.lang-dropdown {
+  }
+  .footer-sec1 {
+    display: none;
+  }
+  .footer-sec2 {
+    display: block;
+  }
+  .footer-sec2 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top .btn {
+    margin-bottom: 35px;
+  }
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(214, 210, 210, 0.29);
+  }
+  .footer-top .social-apps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  .footer-sec-links {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px 0px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .footer-sec-links ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  .footer-whatapp-logo > img {
+    width: 140px;
+    margin: 30px 0px 30px 0px;
+    padding-left: 20px;
+  }
+  .footer-bottom {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .footer-bottom .whatsapp-policy p a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .footer-bottom .whatsapp-policy > p {
+    color: white;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .lang-dropdown {
     width: 55%;
     gap: 45%;
-}
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .navbar1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #fdf5ebd5;
+    height: 7%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.321);
+  }
+  .media2 {
+    display: block;
+  }
+  .whatapplogo img {
+    width: 90px;
+  }
+  .download-icon img {
+    padding: 6px 7px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #25d366;
+  }
+  .featuredetails {
+    height: 100%;
+    width: 94%;
+    margin: 0 auto;
+    background-position: center;
+  }
+  .featuredetails .right {
+    display: none;
+  }
+  .btn {
+    width: 80%;
+  }
+  .featuredetails .leftmsg {
+    width: 100%;
+    margin: 0;
+    margin-left: 20px;
+  }
+  .featuredetails .leftmsg h1 {
+    font-size: 43px;
+    line-height: 44px;
+  }
+  .featuredetails .leftmsg p {
+    font-size: 16px;
+    color: white;
+    width: 58%;
+  }
+  .hero-section {
+    padding: 0;
+    height: 72vh;
+    width: 96%;
+    margin-top: 61px;
+  }
+  .firstsection p {
+    font-size: 23px;
+    line-height: 20px;
+    width: 80%;
+  }
+  .firstsection .media1 {
+    display: none;
+  }
+  .secondsection .firstbdy {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  .secondsection .firstbdy .left {
+    width: 100%;
+    padding-left: 20px;
+  }
+  .secondsection .firstbdy .right {
+    width: 100%;
+    margin: 50px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .firstbdy .right img {
+    width: 200px;
+    margin: 0;
+  }
+  .firstbdy .left h2 {
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #1c1e21;
+    overflow-y: hidden;
+  }
+  .firstbdy .left p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 18px;
+    line-height: 19px;
+    color: #1c1e21;
+    overflow-y: hidden;
+  }
+  .learn-more > span {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #1c1e21;
+  }
+  .beach img:nth-child(2) {
+    position: absolute;
+    width: 300px;
+    top: 80px;
+    right: 10px;
+  }
+  .footer-sec1 {
+    display: none;
+  }
+  .footer-sec2 {
+    display: block;
+  }
+  .footer-sec2 {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-top .btn {
+    margin-bottom: 35px;
+  }
+  hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(214, 210, 210, 0.29);
+  }
+  .footer-top .social-apps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  .footer-sec-links {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 26px 0px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+  }
+  .footer-sec-links ul li a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    line-height: 30px;
+    text-decoration: none;
+  }
+  .footer-whatapp-logo > img {
+    width: 140px;
+    margin: 30px 0px 30px 0px;
+    padding-left: 20px;
+  }
+  .footer-bottom {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+  }
+  .footer-bottom .whatsapp-policy p a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  .footer-bottom .whatsapp-policy > p {
+    color: white;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+  .lang-dropdown {
+    width: 55%;
+    gap: 45%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
