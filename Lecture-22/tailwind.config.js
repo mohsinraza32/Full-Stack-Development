@@ -13,6 +13,9 @@ module.exports = {
       fontSize: {
         "10xl":"1rem"
       },
+      screens: {
+        'move':{'min':'640px' , 'max':'768px'}
+      },
     },
   },
   plugins: [],
