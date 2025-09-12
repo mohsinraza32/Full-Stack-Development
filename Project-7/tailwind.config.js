@@ -11,7 +11,11 @@ module.exports = {
         "light-blue":"#e8f8fd",
         "gray-new":"#d9dada",
         "blue":"#00baf2",
+        "new-blue":"#0094fb",
 
+      },
+      fontSize: {
+        "2px": "2.5rem",
       }
     },
   },
