@@ -7,6 +7,11 @@ module.exports = {
         "dark-blue": "#002970",
         "white-shade": "#f7f9fc",
         "white-new":"#ffffff",
+        "blue-new":"#425170",
+        "light-blue":"#e8f8fd",
+        "gray-new":"#d9dada",
+        "blue":"#00baf2",
+
       }
     },
   },
