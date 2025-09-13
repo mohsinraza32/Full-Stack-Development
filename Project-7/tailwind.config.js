@@ -12,6 +12,8 @@ module.exports = {
         "gray-new":"#d9dada",
         "blue":"#00baf2",
         "new-blue":"#0094fb",
+        "shade-blue":"#d3f5ff",
+        "new-gray":"#cccccc",
 
       },
       fontSize: {
