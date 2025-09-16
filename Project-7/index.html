@@ -15,7 +15,33 @@
       <nav
         class="bg-white-new w-[100%] h-16 flex justify-center items-center shadow-lg sticky top-0"
       >
-        <div class="flex justify-center gap-10 items-center">
+        <!-- for responsiveness -->
+
+        <div class="flex items-center justify-between w-[100%] px-5 large:hidden">
+          <div class="flex items-center gap-4">
+            <i class="fa-solid fa-bars"></i>
+            <img src="./PaytmAssets/asset 0.svg" alt="logo" />
+          </div>
+          <div class="border-2 border-black rounded-3xl">
+            <img src="./PaytmAssets/asset 2.svg" alt="profile-img" />
+          </div>
+        </div>
+
+        <div class="flex items-center px-4 justify-between w-[100%] large:hidden">
+          <div>
+            <img src="./PaytmAssets/asset 0.svg" alt="logo" />
+          </div>
+          <div>
+            <button
+              class="flex gap-3 items-center border-2 border-black w-[110px] rounded-3xl bg-dark-blue"
+            >
+              <img src="./PaytmAssets/asset 2.svg" alt="profile-img" />
+              <p class="text-white text-sm font-semibold">Sign in</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-10 items-center medium:hidden">
           <img src="./PaytmAssets/asset 0.svg" alt="logo" />
           <ul class="flex gap-6">
             <li>
@@ -43,7 +69,7 @@
             </li>
           </ul>
           <div class="flex gap-5 items-center">
-            <div class="flex gap-1 items-center">
+            <div class="flex gap-1 items-center large:invisible">
               <img src="./PaytmAssets/asset 1.svg" alt="download-img" />
               <a href="#" class="text-sm text-blue-new font-semibold"
                 >Download App</a
@@ -66,27 +92,35 @@
           >
             <p class="text-xl font-medium">Recharges</p>
             <div class="flex justify-around">
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 3.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   Mobile<br />
                   Recharge
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 4.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   FASTag<br />
                   Recharge
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 5.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   DTH <br />Recharge
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 6.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   View All<br />
@@ -104,28 +138,36 @@
           >
             <p class="text-xl font-medium">Bill Payments</p>
             <div class="flex justify-around items-center">
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 8.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   Electricity<br />
                   Bill
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 9.png" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   LIC /<br />
                   Insurance
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 10.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   Loan EMI<br />
                   Payment
                 </p>
               </div>
-              <div class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer">
+              <div
+                class="flex flex-col gap-3 hover:bg-gray-200 py-6 px-8 rounded-2xl cursor-pointer"
+              >
                 <img class="w-14" src="./PaytmAssets/asset 11.avif" alt="" />
                 <p class="text-sm font-medium text-center leading-tight">
                   View All<br />
@@ -548,7 +590,7 @@
           </div>
           <hr class="flex-grow mt-10 border border-new-gray" />
         </div>
-<!-- footer section -->
+        <!-- footer section -->
         <div class="flex items-center justify-between mt-10">
           <div>
             <p class="text-sm font-semibold text-gray-500">&copy; 2025 Paytm</p>
@@ -557,11 +599,11 @@
             <div class="flex items-center gap-4">
               <p class="text-sm font-semibold text-gray-500">Follow Us</p>
               <div class="flex gap-4 items-center">
-                <img src="./PaytmAssets/asset 46.svg" alt="">
-                <img src="./PaytmAssets/asset 47.svg" alt="">
-                <img src="./PaytmAssets/asset 48.svg" alt="">
-                <img src="./PaytmAssets/asset 49.svg" alt="">
-                <img src="./PaytmAssets/asset 50.svg" alt="">
+                <img src="./PaytmAssets/asset 46.svg" alt="" />
+                <img src="./PaytmAssets/asset 47.svg" alt="" />
+                <img src="./PaytmAssets/asset 48.svg" alt="" />
+                <img src="./PaytmAssets/asset 49.svg" alt="" />
+                <img src="./PaytmAssets/asset 50.svg" alt="" />
               </div>
             </div>
           </div>
@@ -570,7 +612,7 @@
 
       <!-- Fifth section -->
       <section class="w-full h-4 bg-blue"></section>
-      <section class="w-full h-4 bg-blue-new"></section>      
+      <section class="w-full h-4 bg-blue-new"></section>
     </div>
   </body>
 </html>
