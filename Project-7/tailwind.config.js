@@ -20,7 +20,7 @@ module.exports = {
         "2px": "2.5rem",
       },
       screens: {
-          'verySmall' : {'max':'480px'},
+          'verySmall' : {'max':'390px'},
           'small' : '400px',
           'medium' : '768px',
           'large': {'max' : '1070px'}
