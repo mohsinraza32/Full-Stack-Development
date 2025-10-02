@@ -78,8 +78,45 @@ let str = '  hello mohsin  ';
 // console.log(text.repeat(5));
 
 
-let text = 'I love cats. cats are very easy to love. cats are very popular';
-console.log(text.replaceAll("cats","dogs"));
+// let text = 'I love cats. cats are very easy to love. cats are very popular';
+// console.log(text.replaceAll("cats","dogs"));
+
+// console.log(Math);
+
+// console.log(Math.floor(3.67689999));
+// console.log(Math.ceil(3.1));
+// console.log(Math.max(33,45,99));
+// console.log(Math.min(33,45,99));
+// console.log(Math.round(4.5));
+// console.log(Math.abs(-19));
+// console.log(Math.random());
+
+
+// let min = 10;
+// let max = 20;
+// let randomNumber = Math.floor(Math.random()) * (max - min + 1) + min;
+// console.log(randomNumber);
+
+let date = new Date();
+console.log(date);
+
+// console.log(date.getTime());
+// console.log(Math.round(date.getTime()/1000));
+// console.log(date.toISOString());
+console.log(date.toUTCString());
+
+
+
+
+
+
+
+
+
+
+
+  
+
 
 
 
