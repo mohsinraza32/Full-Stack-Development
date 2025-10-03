@@ -98,12 +98,56 @@ let str = '  hello mohsin  ';
 // console.log(randomNumber);
 
 let date = new Date();
-console.log(date);
+// console.log(date);
 
 // console.log(date.getTime());
 // console.log(Math.round(date.getTime()/1000));
+// console.log(Date.now());
+// console.log(Date.parse("2025-10-03"));
+// console.log(Date.UTC(2025,10,3,15,50,30,40));
+
+
+// ************Get Methods***************
+
+// console.log(date.getFullYear());
+// console.log(date.getMonth());
+// console.log(date.getDate());
+// console.log(date.getDay());
+// console.log(date.getHours());
+// console.log(date.getMinutes());
+// console.log(date.getSeconds());
+// console.log(date.getMilliseconds());
+// console.log(date.getTime());
+// console.log(date.getTimezoneOffset());
+
+// **************conversion and formating**************
+
+// console.log(date.toDateString());
+// console.log(date.toTimeString());
 // console.log(date.toISOString());
-console.log(date.toUTCString());
+//  console.log(date.toLocaleDateString());
+//  console.log(date.toLocaleTimeString());
+//  console.log(date.toLocaleString());
+//  console.log(date.valueOf());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
