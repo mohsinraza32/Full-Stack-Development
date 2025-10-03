@@ -59,10 +59,157 @@ let arr = [2,45,66,77,88,65];
 
 // ********Array Destructuring**********
 
-let arr1 = [4,6,77,7,4,3];
-let [first,second,third,fourth,fifth,six] = arr1;
-console.log(first);
-console.log(fourth);
+// let arr1 = [4,6,77,7,4,3];
+// let [first,second,third,fourth,fifth,sixth] = arr1;
+// console.log(first);
+// console.log(fourth);
+
+
+// ***********Object**************
+
+
+// let obj = {
+//     name : "Mohsin",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// }
+// console.log(obj);
+// console.log(obj['name']); // first way to access object element.
+// console.log(obj.name); //second way to access object element.mostly used.
+// console.log(obj.batch);
+// console.log(obj.course);
+
+// let students = [
+//  {
+//     name : "Mohsin",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// },
+// {
+//     name : "Zulfi",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// },
+// {
+//     name : "Abid",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// },
+// {
+//     name : "Babu",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// },
+// {
+//     name : "Ruhu",
+//     id : 34567889,
+//     course : "Artificial intelliegence",
+//     hosteler : false,
+//     batch : "Fall-2022"
+// }
+// ];
+
+// console.log(students[1].id);
+// console.log(students[3].hosteler);
+
+
+let obj = {
+    name : 'mohsin',
+    id : '345667',
+    course : 'Ai',
+};
+
+// for(let key in obj){
+
+//     // console.log(key);
+//     // console.log(obj[key]);
+    
+// }
+
+// let fruits = ['grapes','mango','apple','banana'];
+// for(let fruit of fruits){
+//     console.log(fruit);
+    
+// }
+
+// ************** template **********
+
+// let str = 'Hello';
+// console.log(`${str} mohsin`);
+
+// *************spread operator *************
+//for array
+// let arr1 = ['mohsin','ali','abid','zahid'];
+// let arr2 = ['shahid','waseem','babu'];
+
+// let newArr = [...arr1,...arr2];
+// console.log(newArr);
+
+//for object
+
+// let obj1 = {
+//     name : 'mohsin',
+//     id : '36464',
+//     section : 'evening',
+// }
+// let obj2 = {
+//     name : 'zahid',
+//     id : '45677',
+//     section : 'morning',
+// }
+
+// let newObj = {...obj1,...obj2};
+// console.log(newObj);
+
+
+//Object destructuring
+
+// let obj2 = {
+//      name : 'zahid',
+//      id : '45677',
+//      section : 'morning',
+//  }
+
+//  let {name,id,section} = obj2;
+//  console.log(name);
+//  console.log(id);
+//  console.log(section);
+
+//  Rest operator 
+
+// let arr1 = ["banana","orange","mango","grapes","pineapple"];
+//  let [one,two,three, ...rest] = arr1;
+//  console.log(one);
+//  console.log(two);
+//  console.log(three);
+//  console.log(rest);
+
+let obj1 = { 
+    name : 'zahid',
+    id : '45677',
+    section : 'morning',
+    class : 'final year'
+} 
+let {name,id, ...rest} = obj1;
+
+console.log(name);
+console.log(id);
+console.log(rest);
+
+
+
+
+
 
 
 
