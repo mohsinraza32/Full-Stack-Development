@@ -149,3 +149,50 @@
 // }
 // let result = calculateArth(4,5, sub);
 // console.log(result);
+
+
+// Closures
+
+// function outer() {
+//   let name = "Mohsin";   // outer ka variable
+
+//   function inner() {
+//     console.log("Hello " + name);
+//   }
+
+//   return inner;
+// }
+
+// const greet = outer();  // yahan outer() chal gaya
+// greet();  // inner() abhi bhi 'name' ko yaad rakhta hai    
+   
+// function myFunc(){
+//     let name = "Mohsin Raza";
+// function func(){
+//     console.log(`Your name is ${name}`);   
+// }
+// return func;     
+// }
+
+// let callFunc = myFunc();
+// callFunc();
+
+function counter() {
+  let count = 0;
+
+  return function() {
+    count++;
+    console.log("Count:", count);
+  }
+}
+
+const add = counter();
+
+
+add(); // Count: 1
+add(); // Count: 2
+add(); // Count: 3
+
+
+
+
