@@ -10,7 +10,8 @@ module.exports = {
         "custom-gray":"#515151",
         "custom-blue2":"#0c1c33",
         "custom-white-shade":"#f4f1e1",
-        "custom-new-blue":"#95b2db"
+        "custom-new-blue":"#95b2db",
+        "custom-new-blue2":"#1b2f4d"
       },
       height:{
         "22":"5.5rem"
@@ -18,7 +19,7 @@ module.exports = {
       screens:{
         'vvsmall':{'max':'520px'},
         'vsmall':{'max':'750px'},
-        'small':{'max':'1200px'} ,
+        'small':{'min':'750px', 'max':'1200px'} ,
         'large':{'max':'1500px'}
       },
     },

@@ -24,7 +24,7 @@
     </div>
     <nav class="bg-custom-black w-full sticky top-0">
       <div
-        class="flex items-center justify-evenly h-22 w-[85%] m-auto small:justify-between"
+        class="flex items-center justify-evenly h-22 w-[85%] m-auto small:justify-between vsmall:justify-between"
       >
         <div>
           <img
@@ -33,7 +33,7 @@
             alt="logo"
           />
         </div>
-        <div class="small:hidden">
+        <div class="small:hidden vsmall:hidden">
           <ul class="flex text-white gap-6 text-lg font-medium">
             <li class="hover:underline"><a href="">Our Story</a></li>
             <li class="hover:underline"><a href="">Anarc Watch</a></li>
@@ -50,7 +50,7 @@
           </ul>
         </div>
         <div class="flex gap-6">
-          <div class="small:hidden">
+          <div class="small:hidden vsmall:hidden">
             <i class="fa-solid fa-magnifying-glass text-white text-xl"></i>
           </div>
           <div class="vsmall:hidden">
@@ -59,7 +59,7 @@
           <div>
             <i class="fa-solid fa-bag-shopping text-white text-xl"></i>
           </div>
-          <div class="hidden small:block">
+          <div class="hidden small:block vsmall:block">
             <i class="fa-solid fa-bars text-white text-xl"></i>
           </div>
         </div>
@@ -78,7 +78,9 @@
             >Filter</a
           >
         </div>
-        <div class="grid grid-cols-3 gap-3 small:grid-cols-2">
+        <div
+          class="grid grid-cols-3 gap-3 small:grid-cols-2 vsmall:grid-cols-2"
+        >
           <div>
             <img src="./layers-assets/asset 2.png" alt="mobile-skin" />
             <p class="pt-3 text-custom-gray font-bold">
@@ -519,7 +521,9 @@
     <!-- footer section -->
 
     <section class="w-full h-full bg-custom-blue2">
-      <div class="flex items-center w-[80%] large:w-[97%] p-20 m-auto justify-around small:hidden">
+      <div
+        class="flex items-center w-[80%] large:w-[97%] p-20 m-auto justify-around small:hidden vsmall:hidden"
+      >
         <div class="flex flex-col gap-8">
           <img src="./layers-assets/asset 41.svg" alt="" />
           <a class="text-custom-new-blue text-lg" href=""
@@ -579,92 +583,161 @@
       </div>
       <!-- footer for small screen -->
 
-      <div class="w-full h-full p-16 hidden small:flex">
+      <div class="w-full h-full p-16 hidden vsmall:hidden small:flex">
         <div class="w-[90%]">
-         <div class="flex flex-col gap-16">
-          <img class="w-80" src="./layers-assets/asset 41.svg" alt="" />
-          <ul>
-            <li class="text-2xl text-custom-white-shade">
-              <a href="#">Our Story</a>
-            </li>
-          </ul>
-        </div>
-        <!--  -->
-        <div class="flex justify-between pt-12">
-          <div class="flex flex-col gap-10">
-            <div>
-              <ul>
-                <li class="text-2xl text-custom-white-shade">
-                  <a href="">Anarc Watch</a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="flex flex-col gap-2">
-                <li class="text-custom-new-blue text-lg">
-                <a href="">Customer Help Center</a>
-              </li>
-              <li class="text-custom-new-blue text-lg">
-                <a href="">Anarc User Manual</a>
-              </li>
-              <li class="text-custom-new-blue text-lg">
-                <a href="">Contact us</a>
-              </li>
-              </ul>
-            </div>
-
-          </div>
-          <div class="flex flex-col gap-10">
-        <div>
-         <ul>
-          <li class="text-2xl text-custom-white-shade">
-              <a href="">Arcs Strap</a>
-            </li>
-         </ul>
-         </div>
-         <div>
-          <ul class="flex flex-col gap-2">
-             <li class="text-custom-new-blue text-lg">
-              <a href="">Terms of Use</a>
-            </li>
-            <li class="text-custom-new-blue text-lg">
-              <a href="">FAQs for Anarc</a>
-            </li>
-          </ul>
-         </div>
-          </div>
-          <div class="flex flex-col gap-10">
-            <div class="flex items-center gap-5">
-            <img src="./layers-assets/asset 54.svg" alt="" />
-            <img src="./layers-assets/asset 68.svg" alt="" />
-            <img class="w-5" src="./layers-assets/asset 55.svg" alt="" />
-          </div>
-          <div>
+          <div class="flex flex-col gap-16">
+            <img class="w-80" src="./layers-assets/asset 41.svg" alt="" />
             <ul>
-              <li class="text-custom-new-blue text-lg">
-              <a href="">Privacy Policy</a>
-            </li>
-            <li class="text-custom-new-blue text-lg">
-              <a href="">Return/Cancellation Policy</a>
-            </li>
-            <li class="text-custom-new-blue text-lg">
-              <a href="">Improvements in Anarc</a>
-            </li>
+              <li class="text-2xl text-custom-white-shade">
+                <a href="#">Our Story</a>
+              </li>
             </ul>
           </div>
+          <!--  -->
+          <div class="flex justify-between pt-12">
+            <div class="flex flex-col gap-10">
+              <div>
+                <ul>
+                  <li class="text-2xl text-custom-white-shade">
+                    <a href="">Anarc Watch</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex flex-col gap-2">
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Customer Help Center</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Anarc User Manual</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10">
+              <div>
+                <ul>
+                  <li class="text-2xl text-custom-white-shade">
+                    <a href="">Arcs Strap</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex flex-col gap-2">
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Terms of Use</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">FAQs for Anarc</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10">
+              <div class="flex items-center gap-5">
+                <img src="./layers-assets/asset 54.svg" alt="" />
+                <img src="./layers-assets/asset 68.svg" alt="" />
+                <img class="w-5" src="./layers-assets/asset 55.svg" alt="" />
+              </div>
+              <div>
+                <ul>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Return/Cancellation Policy</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Improvements in Anarc</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <div class="pt-7">
+            <a class="text-custom-new-blue text-lg" href=""
+              >Copyright &copy; 2025, Layers.All rights reserved.</a
+            >
+          </div>
+          <div></div>
         </div>
-        <div class="pt-7">
-          <a class="text-custom-new-blue text-lg" href=""
-            >Copyright &copy; 2025, Layers.All rights reserved.</a
-          >
+      </div>
+      <!-- for 750px screen -->
+      <div class="w-[90%] h-full pt-10 pb-40 m-auto flex flex-col gap-10 hidden vsmall:flex">
+        <img class="w-80" src="./layers-assets/asset 41.svg" alt="" />
+        <div class="flex flex-col gap-10">
+          <ul>
+            <li class="text-2xl text-custom-white-shade pb-4">
+              <a href="#">Our Story</a>
+            </li>
+            <hr class="border-t-2 border-custom-new-blue2" />
+          </ul>
+          <ul>
+            <li class="text-2xl text-custom-white-shade pb-4">
+              <a href="">Anarc Watch</a>
+            </li>
+            <hr class="border-t-2 border-custom-new-blue2" />
+          </ul>
+          <ul>
+            <li class="text-2xl text-custom-white-shade pb-4">
+              <a href="">Arcs Strap</a>
+            </li>
+            <hr class="border-t-2 border-custom-new-blue2" />
+          </ul>
         </div>
-        <div>
-          
+        <div class="flex flex-col gap-10">
+              <div class="flex items-center gap-5">
+                <img src="./layers-assets/asset 54.svg" alt="" />
+                <img src="./layers-assets/asset 68.svg" alt="" />
+                <img class="w-5" src="./layers-assets/asset 55.svg" alt="" />
         </div>
+        <div class="flex justify-between vvsmall:flex-col vvsmall:gap-4">
+          <div>
+                <ul class="flex flex-col gap-2">
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Customer Help Center</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Anarc User Manual</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul class="flex flex-col gap-2">
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Terms of Use</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">FAQs for Anarc</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Privacy Policy</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Return/Cancellation Policy</a>
+                  </li>
+                  <li class="text-custom-new-blue text-lg">
+                    <a href="">Improvements in Anarc</a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="">
+            <a class="text-custom-white-shade text-lg" href=""
+              >Copyright &copy; 2025, Layers.All rights reserved.</a
+            >
         </div>
-
-        
+      </div>
     </section>
   </body>
 </html>
