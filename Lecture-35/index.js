@@ -23,7 +23,34 @@
 //console.log('ali' - 50); //NaN
 //console.log(7 - 'ali');  // NaN
 //console.log({} - 10);  // NaN
-console.log([] - 10); //-10
+// console.log([] - 10); //-10
+
+
+// console.log(5 - '10');
+
+ //console.log(3 + {name:"mohsin"});  //3[object object]
+
+//console.log(5 - {name:"mohsin"}); //NaN
+
+// let obj = {a: 45 , toString() {return 'hello'}};
+
+// console.log(5 + obj);
+
+// let obj = {a: 45 , toString() {return 'hello'}, valueOf() {return 50},valueOf() {return 45}};
+// //yhn right side wale ko wo chalaega or usse piche wale ko override krdega jese 3 function hn 
+// //to 2 ko override kia or right se last wale ko chalya.
+// console.log(5 + obj);
+
+// let obj = {a: 45 , valueOf() {return {}},toString() {return {}}};
+// console.log(5 + obj);//error aega qke object ko primitive ni bnasakte.
+
+console.log(2 + '');//2
+// console.log(2 + 'Nan'); 2Nan
+
+
+
+
+
 
 
 
