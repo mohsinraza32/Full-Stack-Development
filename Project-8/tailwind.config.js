@@ -22,6 +22,9 @@ module.exports = {
         'small':{'min':'750px', 'max':'1200px'} ,
         'large':{'max':'1500px'}
       },
+      scale: {
+        101: '1.01',
+      },
     },
   },
   plugins: [],
