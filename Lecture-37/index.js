@@ -45,21 +45,50 @@
 //       body.style.backgroundColor = "pink";    
 // })
 
-//write a program to change color with confirm box.
+// //write a program to change color with confirm box.
 
-let btn = document.getElementById('btn');
-let body = document.getElementsByTagName('body')[0];
+// let btn = document.getElementById('btn');
+// let body = document.getElementsByTagName('body')[0];
 
-btn.addEventListener('click', () => {
+// btn.addEventListener('click', () => {
   
-    const isChange = confirm('is Change');
+//     const isChange = confirm('is Change');
 
-    if(isChange){
-        let colorName = prompt('which color');
-        console.log(colorName);
+//     if(isChange){
+//         let colorName = prompt('which color');
+//         console.log(colorName);
         
-        body.style.backgroundColor =  `${colorName}`;   
+//         body.style.backgroundColor =  `${colorName}`;   
       
-    }
+//     }
 
+// })
+
+//write a program to change color with input form
+
+// let colorName = document.getElementById('colorName');
+// let submit = document.getElementById('submit');
+// let body = document.getElementsByTagName('body')[0];
+
+// submit.addEventListener('click', (e) => {
+    
+//     e.preventDefault();    
+//     body.style.backgroundColor = `${colorName.value}`;
+//     console.log(colorName.value);
+// })
+
+//write a program to change color
+
+let btn = document.querySelector('#btn');
+let body = document.querySelector('body');
+
+function random(number){
+ return Math.floor(Math.random() * (number + 1)); 
+   
+}
+btn.addEventListener('click', () => {
+   let ranCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+   document.body.style.backgroundColor = ranCol;
+   
 })
+
