@@ -79,16 +79,42 @@
 
 //write a program to change color
 
-let btn = document.querySelector('#btn');
+// let btn = document.querySelector('#btn');
+// let body = document.querySelector('body');
+
+// function random(number){
+//  return Math.floor(Math.random() * (number + 1)); 
+   
+// }
+// btn.addEventListener('click', () => {
+//    let ranCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+//    document.body.style.backgroundColor = ranCol;
+   
+// })
+
+// let range = document.getElementById('range');
+// let body = document.querySelector('body');
+
+// range.addEventListener('input', (e) => {
+    
+//     e.preventDefault();    
+//     let p = document.createElement('p');
+//     p.innerHTML = range.value;
+//     document.body.appendChild(p)
+     
+// })
+
+// ab kuch esa krna h ke ek hi p tag ho usme value change ho jae range ko ziada ya km krne per.
+
+let range = document.getElementById('range');
 let body = document.querySelector('body');
+let p = document.createElement('p');
 
-function random(number){
- return Math.floor(Math.random() * (number + 1)); 
+
+range.addEventListener('input', (e) => {
+   e.preventDefault();
+   p.innerHTML = range.value;
+   document.body.appendChild(p)
    
-}
-btn.addEventListener('click', () => {
-   let ranCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
-   document.body.style.backgroundColor = ranCol;
-   
+
 })
-

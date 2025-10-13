@@ -1,0 +1,13 @@
+#main-div{
+    width: 100vh;
+    height: 100vh;
+    background-color: pink;
+    padding: 30px;
+}
+.child-div{
+    background-color: purple;
+    width: 30%;
+    height: 30%;
+    margin: 30px;
+    color: white;
+}
