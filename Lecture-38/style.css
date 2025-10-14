@@ -14,7 +14,7 @@
 
 
 .container{
-    width: 100vh;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -22,23 +22,22 @@
     margin: auto;
     gap: 30px;
 }
-.box-1{
+.box-1, .box-2{
     color: white;
     background-color: burlywood;
-    width: 80%;
-    margin: 10px;
-    height: 50%;
+    width: 800px;
+    height: 500px;
     display: flex;
     align-items: center;
 }
-.box-2{
-    background-color:  burlywood;
-    width: 50%;
-    height: 50%;
-}
+
 .item{
+    margin: 20px;
     background-color: brown;
-    margin: 5px;
-    height: 30%;
-    width: 30%;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
