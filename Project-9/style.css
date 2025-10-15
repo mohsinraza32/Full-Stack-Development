@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,9 @@
   align-items: center;
   justify-content: space-between;
   color: #000000;
-  width: 40%;
+  /* width: 40%; */
+  width: 770px;
+  /* overflow-x: hidden; */
   font-size: 16px;
   padding: 30px;
   font-family: monospace;
@@ -31,10 +33,11 @@ i {
   font-size: 25px;
 }
 .set-pass {
-  width: 40%;
+  /* width: 40%; */
+  width: 770px;
   padding: 30px;
   background-color: #ffffff;
-  height: 35%;
+  min-height: 35%;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -100,29 +103,70 @@ hr {
   font-weight: 500;
   font-family: sans-serif;
 }
-input[type="range"]{
-    width: 200px;
-    cursor: pointer;
+input[type="range"] {
+  width: 200px;
+  cursor: pointer;
 }
-#genPassBtn{
-    width: 200px;
-    cursor: pointer;
-    margin-top: 10px;
-    height: 50px;
-    border: none;
-    font-size: 16px;
-    border-radius: 10px;
-    color: #ffffff;
-    font-family: sans-serif;
-    font-weight: 700;
-    background-color: #d71340;
+#genPassBtn {
+  width: 200px;
+  cursor: pointer;
+  margin-top: 10px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #d71340;
 }
-#genPassBtn:hover{
-    background-color: #d71341cd;
+#genPassBtn:hover {
+  background-color: #d71341cd;
 }
-label{
-    cursor: pointer;
+label {
+  cursor: pointer;
 }
-#copyBtn{
-    cursor: pointer;
+#copyBtn {
+  cursor: pointer;
+}
+@media (max-width: 790px) {
+  .generated-pass {
+    width: 95%;
+  }
+  .set-pass {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .set-pass-inside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .generated-pass #pass {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  input[type="range"] {
+    width: 100%;
+  }
+  #genPassBtn {
+  width: 95%;
+  cursor: pointer;
+  margin-top: 0;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 700;
+  background-color: #d71340;
+}
+.container {
+    justify-content: flex-start; /* top par le aao */
+    padding-top: 40px;           /* thoda upar se spacing do */
+    height: auto;                /* 100vh hata do */
+  }
 }
