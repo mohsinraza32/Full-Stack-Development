@@ -4,34 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div>
-        <div>
-            <i class="fa-solid fa-copy" id="copyBtn"></i>
+    <div class="container">
+        <div class="generated-pass">
             <h1 id="pass"></h1>
+            <i class="fa-solid fa-copy" id="copyBtn"></i>
         </div>
-        <div>
-            <input type="range" id="input-range" min="6" max="20" value="10">
-            <p id="range" ></p>
-    
-            <form action="">
-                <input type="checkbox" name="checkbox" id="upper-case">
-                <label for="upper-case">UpperCase</label>
-                <br>
-                <input type="checkbox" name="checkbox" id="lower-case">
-                <label for="upper-case">LowerCase</label>
-                <br>
-                <input type="checkbox" name="checkbox" id="number">
-                <label for="number">Number</label>
-                <br>
-                <input type="checkbox" name="checkbox" id="symbol">
-                <label for="symbol">Symbol</label>
-            </form>
-                <button id="genPassBtn">Generate Password</button>   
-
+        <div class="set-pass">
+            <div class="heading">
+                <h2>Customize Your Password</h2>
+                <hr>
+            </div>
+            <div class="set-pass-inside">
+               <div class="pass-range-box">
+                   <p>Password Length</p>
+                   <div class="pass-range">
+                       <p id="range" >10</p>
+                       <input type="range" id="input-range" min="6" max="20" value="10">
+                   </div>
+                   </div>
+        
+                <form action="">
+                    <div class="input-chekbox">
+                        <input type="checkbox" name="checkbox" id="upper-case">
+                        <label for="upper-case">UpperCase</label>
+                    </div>
+                    <div class="input-chekbox">
+                        <input type="checkbox" name="checkbox" id="lower-case">
+                        <label for="lower-case">LowerCase</label>
+                    </div>
+                    <div class="input-chekbox">
+                        <input type="checkbox" name="checkbox" id="number">
+                        <label for="number">Number</label>
+                    </div>
+                    <div class="input-chekbox">
+                        <input type="checkbox" name="checkbox" id="symbol">
+                        <label for="symbol">Symbol</label>
+                    </div>
+                </form>
+            </div>
+            
         </div>
+        <button id="genPassBtn">Generate Password</button>   
     </div>
 
     
