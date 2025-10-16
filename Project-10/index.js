@@ -26,6 +26,7 @@ ticTac.addEventListener("click", (e) => {
     }
   }
 
+  
   function winner(){
    winningCondition.forEach((items) => {
       let index0 = items[0];
