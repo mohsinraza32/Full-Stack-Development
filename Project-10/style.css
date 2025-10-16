@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+h1 {
+  color: white;
+}
+.ticTac {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  width: 300px;
+  height: 300px;
+}
+.ticTac .box {
+  background-color: white;
+  display: flex;
+  font-size: 30px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
