@@ -1,4 +1,5 @@
 let ticTac = document.querySelector(".ticTac");
+let boxes = document.querySelectorAll(".box");
 
 let currentPlayer = "X";
 
@@ -25,17 +26,28 @@ ticTac.addEventListener("click", (e) => {
       currentPlayer = currentPlayer === "X" ? "O" : "X";
     }
   }
-
+  
   
   function winner(){
    winningCondition.forEach((items) => {
       let index0 = items[0];
       let index1 = items[1];
       let index2 = items[2];
+       
+      let val0 = boxes[0];
+      let val1 = boxes[1];
+      let val2 = boxes[2];
 
-      console.log(index0, index1, index2);
+      console.log(index0, val0, index1, val1, index2, val2);
+      
       
    })
     
   }
 });
+
+
+
+    
+    
+    
