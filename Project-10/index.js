@@ -1,12 +1,10 @@
-let ticTac = document.querySelector(".ticTac");
-let boxes = document.querySelectorAll(".box");
-let heading = document.getElementById("heading");
-let replayBtn = document.getElementById("replayBtn");
+const ticTac = document.querySelector(".ticTac");
+const boxes = document.querySelectorAll(".box");
+const replayBtn = document.getElementById("replayBtn");
 
-let currentPlayer = "X";
-
+let currPlayer = "X";
 let count = 0;
-let winningCondition = [
+const winningCondition = [
   [0, 1, 2],
   [3, 4, 5],
   [6, 7, 8],
@@ -17,84 +15,47 @@ let winningCondition = [
   [2, 4, 6],
 ];
 
-// function startGame() {
-
-// }
-
-function eventStart(e) {
-  //    if(currentPlayer === 'X'){
-  //       currentPlayer = 'O';
-  //    }else{
-  //      currentPlayer = 'X';
-  //    }
-  if (e.target.className !== "ticTac") {
-    if (e.target.innerText === "") {
-      e.target.textContent = currentPlayer;
-      count++;
-      winner();
-      currentPlayer = currentPlayer === "X" ? "O" : "X";
-    }
-    if (count === 9) {
-      heading.innerText = "Match Draw";
-    }
+function eventTarget(e){
+  if (e.target.innerHTML === "") {
+    e.target.innerHTML = currPlayer;
+    count++;
+    winner();
+    currPlayer = currPlayer === "X" ? "O" : "X";
+  }
+  if(count === 9){
+    heading.innerHTML = `Match Draw`;
   }
 }
-function gameStart() {
-  ticTac.addEventListener("click", eventStart);
-}
-
-// ticTac.addEventListener("click", (e) => {
-//   //    if(currentPlayer === 'X'){
-//   //       currentPlayer = 'O';
-//   //    }else{
-//   //      currentPlayer = 'X';
-//   //    }
-//   if (e.target.className !== "ticTac") {
-//     if (e.target.innerText === "") {
-//       e.target.textContent = currentPlayer;
-//       winner();
-//       currentPlayer = currentPlayer === "X" ? "O" : "X";
-//     }
-//   }
-//   });
-
-// ticTac.addEventListener("click", eventStart);
 
 function winner() {
-  winningCondition.forEach((items) => {
-    let index0 = items[0];
-    let index1 = items[1];
-    let index2 = items[2];
-
-    let val0 = boxes[index0].innerText;
-    let val1 = boxes[index1].innerText;
-    let val2 = boxes[index2].innerText;
-
-    console.log(index0, val0, index1, val1, index2, val2);
+  winningCondition.forEach((item) => {
+    let val0 = boxes[item[0]].innerText;
+    let val1 = boxes[item[1]].innerText;
+    let val2 = boxes[item[2]].innerText;
 
     if (val0 !== "" && val1 !== "" && val2 !== "") {
       if (val0 === val1 && val0 === val2) {
-        boxes[index0].classList.add("winnerClass");
-        boxes[index1].classList.add("winnerClass");
-        boxes[index2].classList.add("winnerClass");
         count = 0;
-        heading.innerText = `Winner is ${val0}`;
-        ticTac.removeEventListener("click", eventStart);
+        ticTac.removeEventListener('click', eventTarget);
+        boxes[item[0]].classList.add("winnerClass");
+        boxes[item[1]].classList.add("winnerClass");
+        boxes[item[2]].classList.add("winnerClass");
+        heading.innerHTML = `Winner is ${val0}`;
       }
     }
   });
 }
+ticTac.addEventListener('click', eventTarget);
 
-replayBtn.addEventListener("click", () => {
-  currentPlayer = "X";
+replayBtn.addEventListener("click", (e) => {
+  heading.innerHTML = `Tic Tac Toe`;
+  currPlayer = "X";
   count = 0;
-  boxes.forEach((items) => {
-    items.innerText = "";
-    items.classList.remove("winnerClass");
-  });
 
-  heading.innerText = "Tic Tac Toe";
-  // ticTac.addEventListener("click", eventStart);
-  gameStart();
+  boxes.forEach((item) => {
+    item.innerText = '';
+    item.classList.remove('winnerClass'); 
+  });
+ticTac.addEventListener('click', eventTarget);
+
 });
-gameStart();
