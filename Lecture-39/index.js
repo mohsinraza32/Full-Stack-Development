@@ -130,20 +130,33 @@
 
 // console.log('ending');
 
-console.log('starting');
+// console.log('starting');
 
-setTimeout(function (){
-  console.log('settimeout 3');
+// setTimeout(function (){
+//   console.log('settimeout 3');
   
-},3000);
-setTimeout(function (){
-  console.log('settimeout 2');
+// },3000);
+// setTimeout(function (){
+//   console.log('settimeout 2');
   
-},5000);
-setTimeout(function (){
-  console.log('settimeout 1');
+// },5000);
+// setTimeout(function (){
+//   console.log('settimeout 1');
   
-});
+// });
 
-console.log('ending');
+// console.log('ending');
+
+function outer() {
+  var count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const fn = outer();
+fn();
+fn();
+
 
