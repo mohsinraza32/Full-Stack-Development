@@ -1,4 +1,4 @@
-// function func1(){ // lekin hamare yhn koi esa scene ni h fucn() kisi bhi parent k ander ni h to iska scope global hoga.
+// function func1(){ // lekin hamare yhn koi esa scene ni h func() kisi bhi parent k ander ni h to iska scope global hoga.
 //     let name = 'Mohsin';
 //     console.log(name);
 // }
@@ -37,15 +37,15 @@
 // console.log(name);
 
 //Auto Global
-//var name = 'Mohsin Raza';
+var name = 'Mohsin Raza';
 
-// function func1(){
-//     console.log(name);
-//     helo = "Mohsin";
-//     console.log(helo);
-// }
-// func1();
-// console.log(name);
+function func1(){
+    console.log(name);
+    helo = "Mohsin";
+    console.log(helo);
+}
+func1();
+console.log(name);
 
 // var name = 'Mohsin Raza';
 // function func1(){

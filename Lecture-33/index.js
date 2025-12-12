@@ -9,20 +9,20 @@
 // var sum = add(num1,num2);
 // console.log(sum);
 
-function one(){
-    var a = 'hello1';
-    console.log('inside one');
+// function one(){
+//     var a = 'hello1';
+//     console.log('inside one');
 
-function two(){
-    let b = 'hello2';
-    console.log('inside two');
+// function two(){
+//     let b = 'hello2';
+//     console.log('inside two');
 
-function three(){
-    let c = 'hello3';
-    console.log('inside three');
-}
-three();    
-}
-two();    
-}
-one();
+// function three(){
+//     let c = 'hello3';
+//     console.log('inside three');
+// }
+// three();    
+// }
+// two();    
+// }
+// one();

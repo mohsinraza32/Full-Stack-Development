@@ -34,15 +34,17 @@
 // let num = 52.34567;
 // let result = num.toFixed(4);
 // console.log(result);
+// console.log(typeof(result));
+
 
 // let num = 52.34567;
 // let result = num.toPrecision(3);
 // console.log(result);
 
 // let number = new Number(100);
-
 // console.log(number);
 // console.log(typeof number);
+
 // let numToString = (number.toString());
 // console.log(numToString);
 // console.log(typeof numToString);
@@ -57,15 +59,15 @@ let str = '  hello mohsin  ';
 // console.log(str.toUpperCase());
 // console.log(str.match('mohsin'));
 // console.log(str.charAt(6));
-// console.log(str.indexOf('s'));
+// console.log(str.indexOf('s'));//ye -1 dega ager ni mile to
 // console.log(str.charCodeAt(2));
-// console.log(str.codePointAt(2));
+// // console.log(str.codePointAt(2));
 // console.log(str.concat(' raza'));
 // console.log(str.at(2));
 // console.log(str[0]);
 // console.log(str.slice(4,9));
 // console.log(str.substring(0,-3));
-// console.log(str.isWellFormed());
+// console.log(str.isWellFormed()); //it gives boolean result
 // console.log(str.toWellFormed());
 // console.log(str.trim());
 // console.log(str.trimStart());
@@ -75,7 +77,7 @@ let str = '  hello mohsin  ';
 // let text = '5';
 // console.log(text.padStart(4,'0'));
 // console.log(text.padEnd(4,'0'));
-// console.log(text.repeat(5));
+// console.log(text.repeat(7));
 
 
 // let text = 'I love cats. cats are very easy to love. cats are very popular';
@@ -97,7 +99,7 @@ let str = '  hello mohsin  ';
 // let randomNumber = Math.floor(Math.random()) * (max - min + 1) + min;
 // console.log(randomNumber);
 
-let date = new Date();
+// let date = new Date();
 // console.log(date);
 
 // console.log(date.getTime());

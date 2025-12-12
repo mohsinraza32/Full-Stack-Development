@@ -56,18 +56,18 @@
 // hello();
 // console.log(name);
 
-function hello1(){
+// function hello1(){
 
-    let myName = 'mohsin';
-    console.log('kia hal h bhai!');
+//     let myName = 'mohsin';
+//     console.log('kia hal h bhai!');
 
-    function hello2(){
+//     function hello2(){
       
-        let myAge = 12;
-        console.log(myAge);  
-        console.log(myName);
-    }  
+//         let myAge = 12;
+//         console.log(myAge);  
+//         console.log(myName);
+//     }  
     
-    hello2();
-}
+//     hello2();
+// }
 hello1();

@@ -90,7 +90,7 @@
 
 // }
 
-// one(two());
+// one(two()); //Isme pehle two() execute hota hai (kyunki function call hamesha pehle evaluate hota hai).
 
 // function one(para, fun) {
 //   console.log(fun);
@@ -103,6 +103,7 @@
 
 // one(45, two());
 
+//*****with mormal anonymous function */
 // function one(para, fun) {
 //   console.log(fun);
 //   console.log(para);
@@ -118,6 +119,7 @@
     
 // });
 
+//******with anonymous arrow function
 // function one(para, fun) {
 //   console.log(fun);
 //   console.log(para);
@@ -177,21 +179,21 @@
 // let callFunc = myFunc();
 // callFunc();
 
-function counter() {
-  let count = 0;
+// function counter() {
+//   let count = 0;
 
-  return function() {
-    count++;
-    console.log("Count:", count);
-  }
-}
+//   return function() {
+//     count++;
+//     console.log("Count:", count);  
+//   }
+// }
 
-const add = counter();
+// const add = counter();
 
 
-add(); // Count: 1
-add(); // Count: 2
-add(); // Count: 3
+// add(); // Count: 1
+// add(); // Count: 2
+// add(); // Count: 3
 
 
 

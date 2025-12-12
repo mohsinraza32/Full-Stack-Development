@@ -26,10 +26,10 @@
 // console.log(id1 === id2); //it shows false becase symbol make unique ids.
 
 // let big = 123456789012345678901234567890n;
-// console.log(big + 2n); // 123456789012345678901234567892n
+// console.log(big + 5n); // 123456789012345678901234567892n
 
 // let student = {
-//     full_Name : "Mohsin Raz",
+//     full_Name : "Mohsin Raza",
 //     Roll_Number : 234567,
 //     Program : "bscs",
 //     depart : "computer science",
@@ -60,8 +60,8 @@
 // let divide = num1 / num2;
 // console.log(divide);
 
-// let num1 = 5;
-// let num2 = 10;
+// let num1 = 10;
+// let num2 = 5;
 // let modulas = num1 % num2;
 // console.log(modulas);
 
@@ -79,11 +79,11 @@
 //     console.log(number);
 
 // let number = 10;
-//     number *= 5;
+//     number *= 5;  //number = number * 5
 //     console.log(number);
 
 // let number = 10;
-//     number **= 5;
+//     number **= 5; //number = number ** 5
 //     console.log(number);
 
 // let number = 10;
@@ -91,7 +91,7 @@
 //     console.log(number);
 
 // let number = 10;
-//     number %= 5;
+//     number %= 5;  //number = number % 5
 //     console.log(number);
 
 
@@ -131,22 +131,22 @@
 
 // **************comparison operator ****************
 
-let a = 5;
-let b = 10;
+// let a = 5;
+// let b = 10;
 
-console.log(a > b);
-console.log(a < b);
-console.log(a <= b);
-console.log(a >= b);
-console.log(a != b);
-console.log(a !== b);
-console.log(a == b);
-console.log(a === b);
+// console.log(a > b);
+// console.log(a < b);
+// console.log(a <= b);
+// console.log(a >= b);
+// console.log(a != b);
+// console.log(a !== b);
+// console.log(a == b);
+// console.log(a === b);
 
-console.log(1 + '1');// it shows 11 not 2
+// console.log(1 + '1');// it shows 11 not 2
 
-let c;
-console.log(typeof(typeof(c)));
+// let c;
+// console.log(typeof(typeof(c))); //string
 
 
 

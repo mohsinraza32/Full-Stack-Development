@@ -106,7 +106,7 @@
 
 for(let i = 0; i < 5; i++){
    str = '';
-   for(let j = 0; j <= 5; j++){
+   for(let j = 0; j < 5; j++){
     str += "*";  //str = str + * => str = '' + * => str = *
    }
    console.log(str); 
