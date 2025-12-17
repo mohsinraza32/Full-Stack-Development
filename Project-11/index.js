@@ -1,53 +1,30 @@
 let user = document.getElementById('input-field');
 let userProfile = document.getElementById('user-Profile');
-
 async function fetchData(userName){
-     
+
     let response = await fetch(`https://api.github.com/users/${userName}`);
-    let result = await response.json();
+    let result = await response.json(); 
     console.log(result);
-    displayUserData(result);
-    
+    displayData(result);
 }
 
-document.getElementById('search-btn').addEventListener('click', () => {
-    let userId = user.value;
-    if(userId === ''){
+function displayData({
+    avatar_url, //destructure ho raha h
+    followers,
+    following,
+    name,
+    bio,
+    public_repos,
+    html_url
+}){
+    if(!avatar_url){
+        userProfile.innerHTML = `<h1>Oops! User not Found......</h1>`;
         return;
     }
-    fetchData(userId);
-    userProfile.innerHTML = `<span class="loader"></span>`;
-    userProfile.style.display = "flex";
-    userProfileclassList.add('')
-
-
-})
- function displayUserData({ avatar_url,// second way of destructure
-            name,
-            bio,
-            followers,
-            following,
-            public_repos,
-            html_url
-           }){
-    // const { avatar_url,  first way of destructure
-    //         name,
-    //         bio,
-    //         followers,
-    //         following,
-    //         public_repos
-
-    //        } = result;
-      if(!avatar_url){
-        userProfile.innerHTML = `<h1>Oops! User not found...</h1>`;
-        return;
-      }
-      if(!bio){
+    if(!bio){
         bio = '';
-      }
-    userProfile.innerHTML = `
-    
-         <div class="user-bio">
+    }
+userProfile.innerHTML = `<div class="user-bio">
             <img src=${avatar_url} alt="profile-pic">
             <div class="user-biodata">
                 <p>${name}</p>
@@ -70,9 +47,18 @@ document.getElementById('search-btn').addEventListener('click', () => {
                 </div>
             </div>
             <div>
-               <a href=${html_url} target="_blank">
-               <div id="view-btn">View Profile</div>
-               </a>
+                <a href=${html_url} target="_blank">
+                    <button id="view-btn">View Profile</button>
+                </a>
             </div>
         </div>`
- }
+}
+document.getElementById('search-btn').addEventListener('click', () => {
+    let userName = user.value;
+    if(userName === ''){
+        return;
+     }
+     userProfile.innerHTML = `<span class="loader"></span>`;
+    fetchData(userName);
+    userProfile.style.display = 'flex';
+})
